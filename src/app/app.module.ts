@@ -38,10 +38,7 @@ const appRoutes: Routes = [
     FormsModule,
     //NgbModule,
     HttpClientModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+    RouterModule.forRoot(appRoutes)
   ],
   declarations: [ 
     AppComponent, 

@@ -9,14 +9,12 @@ import { Item } from './item';
 })
 
 export class ItemService {
-
   constructor(private http: HttpClient) { }
-  url = 'http://www.mocky.io/v2';
+  url = 'https://www.mocky.io/v2';
 
   getItems() {
-    return this.http.get<Item>(`${this.url}/5e60ddce3300005fcc97bce5`);
+    ret this.http.get<Item>(`${this.url}/5e60ddce3300005fcc97bce5`);
   };
-
 
 
 } 

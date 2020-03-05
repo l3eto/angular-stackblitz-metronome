@@ -11,8 +11,7 @@ export class Tab3Component  {
   public constructor(private route:ActivatedRoute, private router:Router) {
       console.log(route.snapshot.data['title']);
   }*/
-
-}
-
 //https://maps.googleapis.com/maps/api/place/autocomplete/json?&key=AIzaSyC0Cczj30faXTbODZqBSmnGgIInzpj8JBk
 //https://maps.googleapis.com/maps/api/place/details/json?&key=AIzaSyC0Cczj30faXTbODZqBSmnGgIInzpj8JBk
+}
+
