@@ -13,19 +13,15 @@ import { ErrorComponent } from './error.component';
 
 const appRoutes: Routes = [
   {
-    path: 'tab1',
-    component: Tab1Component
+    path: 'items',
+    component: ItemsComponent
   },
   {
-    path: 'tab2',
-    component: Tab2Component
-  },
-  {
-    path: 'tab3',
-    component: Tab3Component
+    path: 'item/:id',
+    component: ItemComponent
   },
   { path: '',
-    redirectTo: '/tab1',
+    redirectTo: '/item',
     pathMatch: 'full'
   },
   { path: '**', component: ErrorComponent }
