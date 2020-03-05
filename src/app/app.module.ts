@@ -13,18 +13,15 @@ import { ErrorComponent } from './error.component';
 const appRoutes: Routes = [
   {
     path: 'tab1',
-    component: Tab1Component,
-    data: { title: 'Tab 1' }
+    component: Tab1Component
   },
   {
     path: 'tab2',
-    component: Tab2Component,
-    data: { title: 'Tab 2' }
+    component: Tab2Component
   },
   {
     path: 'tab3',
-    component: Tab3Component,
-    data: { title: 'Tab 3' }
+    component: Tab3Component
   },
   { path: '',
     redirectTo: '/tab1',

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'tab1',
-  template: `<h4>data tab 1</h4>`,
+  templateUrl: './tab1.component.html',
   /*styles: [`h1 { font-family: Lato; }`]*/
 })
 export class Tab1Component  {
