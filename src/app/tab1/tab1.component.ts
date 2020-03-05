@@ -13,7 +13,7 @@ export class Tab1Component implements OnInit {
   items: Item[];
   
   ngOnInit() {
-    this.itemService.getItems().subscribe(items => this.items = items);
+    this.itemService.getItems().subscribe(items => this.items = items.data);
   }
 
 }
