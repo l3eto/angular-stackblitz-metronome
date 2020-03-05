@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { Tab1Component } from './tab1/tab1.component';
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
     BrowserModule, 
     FormsModule,
     NgbModule,
+    
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
