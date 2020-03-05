@@ -10,4 +10,4 @@ export class ItemService {
   getItems() {
     return this.http.get(`${this.url}/5e60ddce3300005fcc97bce5`);
   }
-}
+} 
