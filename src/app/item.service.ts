@@ -13,7 +13,7 @@ export class ItemService {
   url = 'https://www.mocky.io/v2';
 
   getItems() {
-    return this.http.get<Item>(`${this.url}/5e6123993300007a5a97c002`);
+    return this.http.get<Item>(`${this.url}/5e61259e33000077ce97c00e`);
   };
 
 
