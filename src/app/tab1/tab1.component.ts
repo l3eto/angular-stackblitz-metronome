@@ -9,16 +9,13 @@ import { Item } from './../item';
   /*styles: [`h1 { font-family: Lato; }`]*/
 })
 export class Tab1Component  implements OnInit {
-  /*@Input() name: string;*/
-
+  
   constructor(private itemService: ItemService) {}
+  items: Item[];  
   
   ngOnInit() {
-    this.itemService.getItems()
-      .subscribe((data: Item) => this.items = {
-          heroesUrl: data['heroesUrl'],
-          textfile:  data['textfile']
-      });
+      this.itemService.getHeroes()
+.subscribe(items => this.items = items);
   }
 
 }
