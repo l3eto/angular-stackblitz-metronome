@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
+import { ItemComponent } from './item/item.component';
 import { ErrorComponent } from './error.component';
 
 const appRoutes: Routes = [
@@ -19,7 +20,7 @@ const appRoutes: Routes = [
     component: ItemComponent
   },
   { path: '',
-    redirectTo: '/item',
+    redirectTo: '/items',
     pathMatch: 'full'
   },
   { path: '**', component: ErrorComponent }
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   declarations: [ 
     AppComponent, 
     ItemsComponent,
+    ItemComponent,
     ErrorComponent 
   ],
   bootstrap:    [ AppComponent ]

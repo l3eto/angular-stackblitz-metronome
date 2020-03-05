@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Item } from './item';
+//import { Item } from './item';
 
 @Injectable({
   providedIn: 'root',
@@ -13,8 +13,12 @@ export class ItemService {
   url = 'https://www.mocky.io/v2';
 
   getItems() {
-    return this.http.get<Item>(`${this.url}/5e61259e33000077ce97c00e`);
-  };
+    return this.http.get(`${this.url}/5e61259e33000077ce97c00e`);
+  }
+
+  getItem(id) {
+    return this.http.get(`${this.url}/5e61281b3300005c3997c02e`);
+  }
 
 
 } 
