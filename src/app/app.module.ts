@@ -5,9 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { Tab1Component } from './tab1.component';
-import { Tab2Component } from './tab2.component';
-import { Tab3Component } from './tab3.component';
+import { Tab1Component } from './tab1/tab1.component';
+import { Tab2Component } from './tab2/tab2.component';
+import { Tab3Component } from './tab3/tab3.component';
 import { ErrorComponent } from './error.component';
 
 const appRoutes: Routes = [
@@ -26,10 +26,10 @@ const appRoutes: Routes = [
     component: Tab3Component,
     data: { title: 'Tab 3' }
   },
-  /*{ path: '',
+  { path: '',
     redirectTo: '/tab1',
     pathMatch: 'full'
-  },*/
+  },
   { path: '**', component: ErrorComponent }
 ];
 
