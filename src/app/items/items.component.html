@@ -1,6 +1,5 @@
 <div *ngIf="items?.length > 0">
-  <p>list</p>
   <div *ngFor="let item of items">
-    <a class="nav-link" routerLink="/item/{{ item.id }}" routerLinkActive="active">Ver {{item.title}}</a>
+    <a class="nav-link" routerLink="/item/{{ item.id }}" routerLinkActive="active">{{ item | json }}</a>
   </div>
 </div>

@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './item/item.component';
+import { HeaderComponent } from './header/header.component';
 import { ErrorComponent } from './error.component';
 
 const appRoutes: Routes = [
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
     AppComponent, 
     ItemsComponent,
     ItemComponent,
+    HeaderComponent,
     ErrorComponent 
   ],
   bootstrap:    [ AppComponent ]
