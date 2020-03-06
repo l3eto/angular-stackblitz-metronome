@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
  // categories: any[] = categories;
- categories: any[] = [];
+ categories: any[] = [
+   {name: 'Items', href: 'items'}
+ ];
   isCollapsed = false;
   constructor() { }
 
