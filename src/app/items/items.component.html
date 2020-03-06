@@ -1,5 +1,5 @@
 <div *ngIf="items?.length > 0">
-  <div *ngFor="let item of items">
-    <a class="nav-link" routerLink="/item/{{ item.id }}" routerLinkActive="active">{{ item | json }}</a>
-  </div>
+  <ul class="list-group list-group-flush">
+    <a *ngFor="let item of items" class="list-group-item list-group-item-action" routerLink="/item/{{ item.id }}" routerLinkActive="active">{{ item.title }}</a>
+  </ul>
 </div>
