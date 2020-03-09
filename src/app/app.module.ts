@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -31,8 +33,9 @@ const appRoutes: Routes = [
 
 
 @NgModule({
-  imports:      [
-    BrowserModule, 
+  imports:[
+    BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     //NgbModule,
     MenubarModule,
