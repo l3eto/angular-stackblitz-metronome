@@ -11,6 +11,8 @@ import { ItemComponent } from './item/item.component';
 import { HeaderComponent } from './header/header.component';
 import { ErrorComponent } from './error.component';
 
+import { MenubarModule } from 'primeng/menubar';
+
 const appRoutes: Routes = [
   {
     path: 'items',
@@ -33,6 +35,7 @@ const appRoutes: Routes = [
     BrowserModule, 
     FormsModule,
     //NgbModule,
+    MenubarModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],

@@ -14,10 +14,14 @@
     "core-js": "2",
     "jquery": "1.9.1 - 3",
     "popper.js": "^1.16.0",
+    "primeng": "^8.0.0",
+    "primeicons": "^2.0.0",
     "rxjs": "^6.5.2",
     "tslib": "^1.10.0",
     "zone.js": "^0.9.1"
-  },
+  },"styles":["node_modules/primeicons/primeicons.css",
+  "node_modules/primeng/resources/themes/nova-light/theme.css",
+  "node_modules/primeng/resources/primeng.min.css"],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
