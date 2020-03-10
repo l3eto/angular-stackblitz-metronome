@@ -12,6 +12,7 @@ import { ItemComponent } from './item/item.component';
 import { HeaderComponent } from './header/header.component';
 import { ErrorComponent } from './error.component';
 
+import { TableModule } from 'primeng/table';
 import { MenubarModule } from 'primeng/menubar';
 
 const appRoutes: Routes = [
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     FormsModule,
     MenubarModule,
+    TableModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
