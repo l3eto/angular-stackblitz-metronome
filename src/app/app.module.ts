@@ -16,6 +16,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TableModule } from 'primeng/table';
 import { MenubarModule } from 'primeng/menubar';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+
 const appRoutes: Routes = [
   {
     path: 'items',
@@ -54,4 +58,8 @@ const appRoutes: Routes = [
   bootstrap:    [ AppComponent ]
 })
 
-export class AppModule { }
+export class AppModule { 
+  constructor() {
+    library.add(fas, far);
+  }
+}
