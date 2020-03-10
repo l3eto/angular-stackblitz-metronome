@@ -12,6 +12,7 @@ import { ItemComponent } from './item/item.component';
 import { HeaderComponent } from './header/header.component';
 import { ErrorComponent } from './error.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TableModule } from 'primeng/table';
 import { MenubarModule } from 'primeng/menubar';
 
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
     FormsModule,
     MenubarModule,
     TableModule,
+    FontAwesomeModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
