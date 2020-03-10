@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
     this.items = [
       {
         label: 'Items',
-        icon: '',
         items: [
           {
             label: 'Ver', 
