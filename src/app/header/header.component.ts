@@ -8,10 +8,9 @@ import { MenuItem } from 'primeng/api';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  //styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
- // categories: any[] = categories;
+
   items: MenuItem[];
 
   ngOnInit() {
@@ -31,19 +30,4 @@ export class HeaderComponent implements OnInit {
       }
     ];
   }
-
-
- /*categories: any[] = [
-   {name: 'Items', href: 'items'}
- ];
-  isCollapsed = false;
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  toggleMenu(){
-    this.isCollapsed = !this.isCollapsed;
-  }
-*/
 }
