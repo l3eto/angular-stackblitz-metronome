@@ -5,12 +5,19 @@
               {{col.header}}
               <p-sortIcon [field]="col.field"></p-sortIcon>
           </th>
+          <th style="width: 8em; text-align: center;">
+            <button pButton type="button" icon="pi pi-cog"></button>
+          </th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-item let-columns="columns">
       <tr>
         <td *ngFor="let col of cols">
           {{item[col.field]}}
+        </td>
+        <td>
+          <button pButton type="button" class="ui-button-success" icon="pi pi-search" style="margin-right: .5em"></button>
+          <button pButton type="button" class="ui-button-warning" icon="pi pi-pencil"></button>
         </td>
       </tr>
     </ng-template>
