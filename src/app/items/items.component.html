@@ -24,7 +24,7 @@
 
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let item; columns: displayedColumns;" [routerLink]="['/item/', item._id]"></tr>
+      <tr mat-row *matRowDef="let item; columns: displayedColumns;" [routerLink]="['/item/', item.id]"></tr>
 
     </table>
 
