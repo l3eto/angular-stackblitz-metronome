@@ -11,7 +11,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 export class ItemComponent implements OnInit {
 
-  item: Item;isLoadingResults = true;
+  item: Item;
+  isLoadingResults = true;
   constructor(private route: ActivatedRoute, private itemService: ItemService) {}
   
   ngOnInit() {
