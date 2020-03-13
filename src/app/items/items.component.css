@@ -1,37 +1,22 @@
-        .ui-table.ui-table-cars .ui-table-caption.ui-widget-header {
-            border: 0 none;
-            padding: 12px;
-            text-align: left;
-            font-size: 20px;
-        }
+/* Structure */
+.example-container {
+  position: relative;
+  padding: 5px;
+}
 
-        .ui-column-filter {
-            margin-top: 1em;
-        }
+.example-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-        .ui-column-filter .ui-multiselect-label {
-            font-weight: 500;
-        }
-        
-        .ui-table.ui-table-cars .ui-table-thead > tr > th {
-            border: 0 none;
-            text-align: left;
-        }
-        
-        .ui-table-globalfilter-container {
-            float: right;
-            display: inline;
-        }
-
-        .ui-table.ui-table-cars .ui-table-tbody > tr > td {
-            border: 0 none;
-        }
-
-        .ui-table.ui-table-cars .ui-table-tbody .ui-column-title {
-            font-size: 16px;
-        }
-
-        .ui-table.ui-table-cars .ui-paginator {
-            border: 0 none;
-            padding: 1em;
-        }
+.mat-flat-button {
+  margin: 5px;
+}
