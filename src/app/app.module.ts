@@ -11,9 +11,25 @@ import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './item/item.component';
 import { HeaderComponent } from './header/header.component';
 import { ErrorComponent } from './error.component';
-
+/*
 import { TableModule } from 'primeng/table';
 import { MenubarModule } from 'primeng/menubar';
+*/
+
+import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSelectModule } from '@angular/material/select';
+
 
 const appRoutes: Routes = [
   {
@@ -37,9 +53,24 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MenubarModule,
-    TableModule,
+    /*MenubarModule,
+    TableModule,*/
     HttpClientModule,
+
+    MatInputModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatSortModule,
+    MatTableModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatButtonToggleModule,
+    MatSelectModule,
+
     RouterModule.forRoot(appRoutes),
   ],
   declarations: [ 

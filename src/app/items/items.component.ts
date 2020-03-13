@@ -10,14 +10,15 @@ import { Item } from './../item';
 export class ItemsComponent implements OnInit {
   
   constructor(private itemService: ItemService) {}
-  items: Item[];
+  items: Item[] = [];
+  displayedColumns: string[] = ['id', 'title'];
+  isLoadingResults = true;
   
   ngOnInit() {
-    this.cols = [
-      { field: 'id', header: 'Id' },
-      { field: 'title', header: 'Title' }
-  ];
-    this.itemService.getItems().subscribe(data => this.items = data.items);
+    this.itemService.getItems().subscribe((data: any) => {
+      this.items = data.items;
+      this.isLoadingResults = false;
+    });
   }
 
 }
